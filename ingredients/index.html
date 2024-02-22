@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form id="form-recipe" method="GET" action=".">
+      <div class="container-ingredients">
+        <h2>ingredients</h2>
+
+        <div class="container-ingredients-input">
+          <input type="text" id="ingredient" placeholder="ingredient" />
+          <button id="btn-add-ingredient">add</button>
+        </div>
+
+        <div id="container-ingredients-list"></div>
+
+        <input id="ingredients" name="ingredients" type="hidden" />
+      </div>
+
+      <input type="submit" id="submit" value="create recipe" />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: grey;
+  font-family: Arial, sans-serif;
+}
+
+#form-recipe,
+.container-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-steps {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem grey;
+}
+
+.container-steps h2 {
+  text-align: center;
+
+  padding-bottom: 0.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+
+  width: 8rem;
+
+  border-bottom: 0.1rem solid grey;
+}
+
+#submit {
+  padding: 0.25rem;
+  padding-inline: 1rem;
+
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
+
+  color: grey;
+  background: white;
+}
+
+#submit:hover {
+  cursor: pointer;
+
+  color: white;
+  background: grey;
+}
+
+#list-steps {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
+
+  width: 30rem;
+}
+
+#list-steps li {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.step {
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+
+  width: 100%;
+
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
+
+  resize: none;
+}

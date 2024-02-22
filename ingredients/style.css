@@ -1,0 +1,108 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: grey;
+  font-family: Arial, sans-serif;
+}
+
+#form-recipe,
+.container-ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-ingredients {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem grey;
+}
+
+.container-ingredients h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#container-ingredients-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  width: 100%;
+}
+
+.container-ingredients input {
+  padding: 0.25rem;
+
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
+
+  color: grey;
+}
+
+#submit,
+#btn-add-ingredient {
+  padding: 0.25rem;
+  padding-inline: 1rem;
+
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
+
+  color: grey;
+  background: white;
+}
+
+#submit:hover,
+#btn-add-ingredient:hover {
+  cursor: pointer;
+
+  color: white;
+  background: grey;
+}
+
+#container-ingredients-list div {
+  display: flex;
+  align-items: center;
+
+  width: calc(100% - 0.5rem);
+
+  padding: 0.25rem;
+  margin-top: 0.2rem;
+
+  border-radius: 0.5rem;
+
+  color: white;
+  background: grey;
+}
+
+#container-ingredients-list div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  margin-inline: 0.5rem;
+  margin-right: 2rem;
+
+  border: none;
+
+  color: white;
+  background: grey;
+  font-weight: bold;
+}
+
+#container-ingredients-list div button:hover {
+  cursor: pointer;
+}
