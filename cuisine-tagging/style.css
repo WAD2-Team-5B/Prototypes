@@ -1,0 +1,165 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: grey;
+  font-family: Arial, sans-serif;
+}
+
+#form-recipe,
+.container-cuisine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-cuisine {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem grey;
+}
+
+.container-cuisine h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.sub-container-cuisine {
+  display: flex;
+  justify-content: space-between;
+
+  width: 20rem;
+}
+
+#submit {
+  padding: 0.25rem;
+  padding-inline: 1rem;
+
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
+
+  color: grey;
+  background: white;
+}
+
+#submit:hover {
+  cursor: pointer;
+
+  color: white;
+  background: grey;
+}
+
+#container-cuisine-list,
+#container-cuisine-selected {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
+
+  width: 45%;
+  max-height: 10rem;
+
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem;
+
+  overflow-y: auto;
+}
+
+#container-cuisine-selected {
+  border: none;
+  border-radius: 0;
+}
+
+.btn-cuisine {
+  text-decoration: none;
+  text-align: center;
+
+  padding: 0.25rem;
+  margin: 0;
+  margin-top: 0.25rem;
+  border: none;
+
+  width: 100%;
+
+  background: white;
+  color: grey;
+}
+
+.btn-cuisine:first-child {
+  margin-top: 0;
+}
+
+.btn-cuisine:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-cuisine-active,
+.btn-cuisine-active:hover {
+  background-color: #2e2e2e;
+  color: white;
+  font-weight: bold;
+}
+
+#container-cuisine-selected div {
+  display: flex;
+  align-items: center;
+
+  width: calc(100% - 0.5rem);
+
+  padding: 0.25rem;
+  margin-top: 0.2rem;
+
+  border-radius: 0.5rem;
+  animation: fadein 0.5s;
+
+  color: white;
+  background: grey;
+}
+
+#container-cuisine-selected div:first-child {
+  margin-top: 0;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#container-cuisine-selected div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  margin-inline: 0.5rem;
+  margin-right: 2rem;
+
+  border: none;
+
+  color: white;
+  background: grey;
+  font-weight: bold;
+}
+
+#container-cuisine-selected div button:hover {
+  cursor: pointer;
+}
