@@ -81,9 +81,19 @@ body {
   margin-top: 0.2rem;
 
   border-radius: 0.5rem;
+  animation: fadein 0.5s;
 
   color: white;
   background: grey;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #container-ingredients-list div button {
