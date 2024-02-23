@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form id="form-recipe" method="GET" action=".">
+      <div class="container-difficulty">
+        <h2>difficulty</h2>
+
+        <div class="container-difficulty-input">
+          <button id="btn-easy" class="btn-difficulty" value="easy">
+            easy
+          </button>
+          <button id="btn-medium" class="btn-difficulty" value="medium">
+            medium
+          </button>
+          <button id="btn-hard" class="btn-difficulty" value="hard">
+            hard
+          </button>
+        </div>
+
+        <input type="hidden" id="difficulty" name="difficulty" />
+      </div>
+
+      <input type="submit" id="submit" value="create recipe" />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
